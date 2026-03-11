@@ -1,18 +1,22 @@
 package models;
 
-public class enrollments {
+public class Enrollment {
 
     private Long enrollmentId;
     private Student student;
-    private Groups group;
-    private String status;
+    private Program program;
+    private Period period;
+    private Group group;
+    private boolean status;
 
-    public enrollments() {
+    public Enrollment() {
     }
 
-    public enrollments(Long enrollmentId, Student student, Groups group, String status) {
+    public Enrollment(Long enrollmentId, Student student, Program program, Period period, Group group, boolean status) {
         this.enrollmentId = enrollmentId;
         this.student = student;
+        this.program = program;
+        this.period = period;
         this.group = group;
         this.status = status;
     }
@@ -33,19 +37,47 @@ public class enrollments {
         this.student = student;
     }
 
-    public Groups getGroup() {
+    public Program getProgram() {
+        return program;
+    }
+
+    public void setProgram(Program program) {
+        this.program = program;
+    }
+
+    public Period getPeriod() {
+        return period;
+    }
+
+    public void setPeriod(Period period) {
+        this.period = period;
+    }
+
+    public Group getGroup() {
         return group;
     }
 
-    public void setGroup(Groups group) {
+    public void setGroup(Group group) {
         this.group = group;
     }
 
-    public String getStatus() {
+    public boolean isStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(boolean status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "Enrollment{" +
+                "enrollmentId=" + enrollmentId +
+                ", student=" + student +
+                ", program=" + program +
+                ", period=" + period +
+                ", group=" + group +
+                ", status=" + status +
+                '}';
     }
 }
