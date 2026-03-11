@@ -1,6 +1,6 @@
 package models;
 
-public class person {
+public class Person {
     private Long userId;
     private String code;
     private String documentNumber;
@@ -8,11 +8,11 @@ public class person {
     private String lastName;
     private Boolean status;
 
-    public person() {
+    public Person() {
 
     }
 
-    public person(Long userId, String code, String documentNumber, String firstName, String lastName, Boolean status) {
+    public Person(Long userId, String code, String documentNumber, String firstName, String lastName, Boolean status) {
         this.userId = userId;
         this.code = code;
         this.documentNumber = documentNumber;

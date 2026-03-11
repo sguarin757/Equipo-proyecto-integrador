@@ -1,15 +1,15 @@
 package models;
 
-public class group_subjects {
+public class Group_Subject {
     private Long groupSubjectId;
-    private Groups group;
-    private Subjects subject;
+    private Group group;
+    private Subject subject;
     private Teacher teacher;
 
-    public group_subjects() {
+    public Group_Subject() {
     }
 
-    public group_subjects(Long groupSubjectId, Groups group, Subjects subject, Teacher teacher) {
+    public Group_Subject(Long groupSubjectId, Group group, Subject subject, Teacher teacher) {
         this.groupSubjectId = groupSubjectId;
         this.group = group;
         this.subject = subject;
@@ -24,19 +24,19 @@ public class group_subjects {
         this.groupSubjectId = groupSubjectId;
     }
 
-    public Groups getGroup() {
+    public Group getGroup() {
         return group;
     }
 
-    public void setGroup(Groups group) {
+    public void setGroup(Group group) {
         this.group = group;
     }
 
-    public Subjects getSubject() {
+    public Subject getSubject() {
         return subject;
     }
 
-    public void setSubject(Subjects subject) {
+    public void setSubject(Subject subject) {
         this.subject = subject;
     }
 
